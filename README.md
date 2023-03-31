@@ -35,3 +35,4 @@ Se desideri contribuire a questo progetto, ti prego di seguire questi passaggi:
 ## Licenza
 Questo progetto è rilasciato sotto la licenza [nome della licenza]. Per ulteriori informazioni, consultare il file LICENSE.
 
+<h4 align="center"> 👋  Grazie della lettura!  😁</h4>
