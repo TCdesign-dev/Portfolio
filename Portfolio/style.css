@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap');
+
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f6f8fa;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.chat-output {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.chat-form {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.chat-input {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    flex-grow: 1;
+    padding: 16px;
+    /*border: 1px solid #ccc;*/
+    border: 0px solid rgba(255, 255, 255, 1);
+    /*border-bottom: 2px solid rgba(0, 0, 0, 1);*/
+    border-radius: 9px 0px 0px 9px;
+    outline: none;
+    background-color: #f6f8fa;
+}
+
+.submit {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    padding: 20px;
+    background-color: #f6f8fa;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0px 9px 9px 0px;
+    cursor: pointer;
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.submit:hover {
+    background-color: #ffffff;
+}
+
+.submit:before {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #f6f8fa;
+    color: black;
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: white;
+    color: #222;
+    margin-right: auto;
+    border: none;
+}
+
+.chat-message img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.chat-message a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.chat-message a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    .chat-output {
+        padding: 15px 10px;
+    }
+
+    .chat-form {
+        padding: 10px 5px;
+    }
+
+    .chat-input {
+        font-size: 14px;
+    }
+
+    .chat-submit-button {
+        font-size: 16px;
+    }
+
+    .chat-message {
+        font-size: 14px;
+    }
+}
+
+.work-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.work-link:hover {
+    background-color: #0056b3;
+}
+
